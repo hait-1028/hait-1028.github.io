@@ -1,0 +1,201 @@
+{
+  "mapping": {
+    "/dashboard": [
+      "工作台.md"
+    ],
+    "/asset-management/asset-ledger": [
+      "资产清单.md"
+    ],
+    "/asset-management/asset-stock": [
+      "资产库存.md"
+    ],
+    "/asset-management/asset-inbound": [
+      "资产入库.md"
+    ],
+    "/asset-management/asset-outbound": [
+      "资产派发.md"
+    ],
+    "/asset-management/borrow-records": [
+      "借用登记.md"
+    ],
+    "/asset-management/usage-change": [
+      "使用变更.md"
+    ],
+    "/asset-management/maintenance-records": [
+      "维保登记.md"
+    ],
+    "/asset-management/asset-disposal": [
+      "资产处置.md"
+    ],
+    "/asset-management/code-management": [
+      "编码管理.md"
+    ],
+    "/asset-management/asset-inventory": [
+      "资产盘点.md"
+    ],
+    "/asset-management/asset-category": [
+      "资产分类.md"
+    ],
+    "/asset-management/asset-archive": [
+      "资产分类.md"
+    ],
+    "/asset-management/location-management": [
+      "位置管理.md"
+    ],
+    "/asset-management/device-management": [
+      "设备管理.md"
+    ],
+    "/asset-management/label-settings": [
+      "标签设置.md"
+    ],
+    "/asset-management/basic-info": [
+      "基础信息展示入口.md"
+    ],
+    "/statistics/asset-query": [
+      "查询导出.md"
+    ]
+  },
+  "tree": [
+    {
+      "title": "工作台",
+      "filePath": "",
+      "icon": "Document",
+      "children": [
+        {
+          "title": "工作台",
+          "filePath": "工作台.md"
+        }
+      ]
+    },
+    {
+      "title": "仓储管理",
+      "filePath": "",
+      "icon": "Document",
+      "children": [
+        {
+          "title": "资产清单",
+          "filePath": "资产清单.md"
+        },
+        {
+          "title": "资产库存",
+          "filePath": "资产库存.md"
+        },
+        {
+          "title": "资产入库",
+          "filePath": "资产入库.md"
+        },
+        {
+          "title": "资产派发",
+          "filePath": "资产派发.md"
+        }
+      ]
+    },
+    {
+      "title": "日常管理",
+      "filePath": "",
+      "icon": "Document",
+      "children": [
+        {
+          "title": "借用登记",
+          "filePath": "借用登记.md"
+        },
+        {
+          "title": "使用变更",
+          "filePath": "使用变更.md"
+        },
+        {
+          "title": "维保登记",
+          "filePath": "维保登记.md"
+        },
+        {
+          "title": "资产处置",
+          "filePath": "资产处置.md"
+        }
+      ]
+    },
+    {
+      "title": "资产盘点",
+      "filePath": "",
+      "icon": "Document",
+      "children": [
+        {
+          "title": "编码管理",
+          "filePath": "编码管理.md"
+        },
+        {
+          "title": "资产盘点",
+          "filePath": "资产盘点.md"
+        }
+      ]
+    },
+    {
+      "title": "查询导出",
+      "filePath": "",
+      "icon": "Document",
+      "children": [
+        {
+          "title": "资产查询",
+          "filePath": "查询导出.md"
+        }
+      ]
+    },
+    {
+      "title": "系统设置",
+      "filePath": "",
+      "icon": "Document",
+      "children": [
+        {
+          "title": "资产分类",
+          "filePath": "资产分类.md"
+        },
+        {
+          "title": "标准型号",
+          "filePath": "资产分类.md"
+        },
+        {
+          "title": "位置管理",
+          "filePath": "位置管理.md"
+        },
+        {
+          "title": "设备管理",
+          "filePath": "设备管理.md"
+        },
+        {
+          "title": "标签设置",
+          "filePath": "标签设置.md"
+        }
+      ]
+    },
+    {
+      "title": "基础信息",
+      "filePath": "",
+      "icon": "Document",
+      "children": [
+        {
+          "title": "基础信息展示入口",
+          "filePath": "基础信息展示入口.md"
+        }
+      ]
+    }
+  ],
+  "externalBase": "../../../../002_PRD/barracks-admin",
+  "files": [
+    "位置管理.md",
+    "使用变更.md",
+    "借用登记.md",
+    "基础信息展示入口.md",
+    "工作台.md",
+    "查询导出.md",
+    "标签设置.md",
+    "维保登记.md",
+    "编码管理.md",
+    "设备管理.md",
+    "资产入库.md",
+    "资产分类.md",
+    "资产处置.md",
+    "资产库存.md",
+    "资产派发.md",
+    "资产清单.md",
+    "资产盘点.md"
+  ]
+}

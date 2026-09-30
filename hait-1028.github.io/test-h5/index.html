@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/test-h5/assets/uni.3722e774.css">
+
+  <meta name="referrer" content="no-referrer" charset="UTF-8" />
+  <script>
+    var coverSupport =
+      "CSS" in window &&
+      typeof CSS.supports === "function" &&
+      (CSS.supports("top: env(a)") || CSS.supports("top: constant(a)"));
+    document.write(
+      '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+      (coverSupport ? ", viewport-fit=cover" : "") +
+      '" />'
+    );
+  </script>
+  <title>mobile-app</title>
+  <script>
+    // 预览器 iframe 环境中，PC 浏览器无 safe-area，手动设置刘海高度避免导航栏被遮挡
+    // liuhai 参数由预览器按设备类型注入：手机=20px（刘海），PAD=0px（无刘海）
+    if (window.self !== window.top) {
+      var liuhaiParam = new URLSearchParams(window.location.search).get('liuhai');
+      document.documentElement.style.setProperty('--liuhai-top', (liuhaiParam || '20') + 'px');
+    }
+  </script>
+  <script type="module" crossorigin src="/test-h5/assets/index-DsfVUykM.js"></script>
+  <link rel="stylesheet" crossorigin href="/test-h5/assets/index-eOoLLR1H.css">
+</head>
+
+<body>
+  <div id="app">
+    <!--app-html-->
+  </div>
+  <style>
+    /*修复vue3.0-shadow-grey.png图片导致加载慢问题*/
+    body:after {
+      display: none !important;
+      position: fixed;
+      content: "";
+      left: -1000px;
+      top: -1000px;
+      animation: shadow-preload 0.1s;
+      animation-delay: 3s;
+    }
+
+    @keyframes shadow-preload {
+      0% {
+        background-image: none;
+      }
+
+      100% {
+        background-image: none;
+      }
+    }
+  </style>
+</body>
+
+</html>

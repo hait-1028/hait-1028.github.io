@@ -1,0 +1,396 @@
+
+
+
+
+/**
+ * ML 移动端设计系统 CSS 变量
+ * 所有变量以 --ml 为前缀，供 uni-app H5 端使用
+ * 换算规则：1.44px = 1rpx（ceil 向上取整）
+ */
+[data-v-6de84266]:root {
+  /* ================================================================ */
+  /*  品牌色（Brand）                                                  */
+  /* ================================================================ */
+  --ml-color-brand:        #3370ff;  /* 主色 — 文字/图标/强调              */
+  --ml-color-brand-light:  #c2d4ff;  /* 浅色 — 边框/图标（弱强调）          */
+  --ml-color-brand-bg:     #ebf1ff;  /* 底色 — 标签/卡片背景                */
+  --ml-color-brand-text:   #3370ff;  /* 品牌文字色                         */
+  --ml-color-brand-hover:  #2951e6;  /* hover/pressed 深色态               */
+
+  /* ================================================================ */
+  /*  语义色（Status Colors）                                          */
+  /* ================================================================ */
+  /* 成功 */
+  --ml-color-success:        #00bf7f;  /* 主色 — 文字/图标                 */
+  --ml-color-success-light:  #ccf2e5;  /* 浅色 — 边框/图标                 */
+  --ml-color-success-bg:     #e6f9f2;  /* 底色 — 标签/卡片背景             */
+  --ml-color-success-hover:  #00a66e;  /* hover 深色态                     */
+
+  /* 警告 */
+  --ml-color-warning:        #fb9d30;
+  --ml-color-warning-light:  #feebd6;
+  --ml-color-warning-bg:     #fff5eb;
+
+  /* 错误 */
+  --ml-color-error:          #ff4141;
+  --ml-color-error-light:    #fc8a8b;
+  --ml-color-error-bg:       #fae6e8;
+
+  /* 信息 */
+  --ml-color-info:           #858b96;
+  --ml-color-info-bg:        #f3f3f4;
+
+  /* ================================================================ */
+  /*  灰蓝色阶（GrayBlue）— 替代中灰色系作为文字/背景/边框的基础色    */
+  /* ================================================================ */
+  --ml-color-grayblue-darkest: #272848;       /* 最深 — 标题/主文字 */
+  --ml-color-grayblue-darker: #4e556c;        /* 次要文字 */
+  --ml-color-grayblue-dark: #717991;
+  --ml-color-grayblue-medium-dark: #b0b3be;   /* 占位符/禁用文字 */
+  --ml-color-grayblue-medium: #cecfd5;
+  --ml-color-grayblue-medium-light: #dadbe2;  /* 强边框 */
+  --ml-color-grayblue-light: #e3e5eb;         /* 默认边框/分割线 */
+  --ml-color-grayblue-lighter: #eeeff2;       /* 弱边框 */
+  --ml-color-grayblue-lightest: #f5f6fa;      /* 页面背景/次级背景 */
+  --ml-color-grayblue-surface: #f9f9fc;       /* 最浅表层 */ 
+
+  /* ================================================================ */
+  /*  文字色                                                           */
+  /* ================================================================ */
+  --ml-color-text-heading:    #272848;
+  --ml-color-text-primary:    #272848;
+  --ml-color-text-secondary:  #4e556c;
+  --ml-color-text-placeholder: #b0b3be;
+  --ml-color-text-disabled:   #b0b3be;
+  --ml-color-text-inverse:    #ffffff;
+  --ml-color-text-tertiary:   #717991;
+
+  /* ================================================================ */
+  /*  背景色                                                           */
+  /* ================================================================ */
+  --ml-color-bg-page:    #f5f6fa;
+  --ml-color-bg-surface: #ffffff;
+  --ml-color-bg-subtle:  #f5f6fa;
+  --ml-color-bg-inverse: #272848;
+
+  /* ================================================================ */
+  /*  边框                                                             */
+  /* ================================================================ */
+  --ml-color-border-default: #e3e5eb;
+  --ml-color-border-subtle:  #eeeff2;
+  --ml-color-border-strong:  #dadbe2;
+  --ml-color-border-focus:   #3370ff;
+
+  /* ================================================================ */
+  /*  分割线 / 遮罩 / 基础色                                            */
+  /* ================================================================ */
+  --ml-color-line:        #e3e5eb;
+  --ml-color-bg:          #f5f6fa;
+  --ml-color-mask:        rgba(0, 0, 0, 0.8);
+  --ml-color-mask-light:  rgba(0, 0, 0, 0.6);
+  --ml-color-white:       #ffffff;
+  --ml-color-black:       #000000;
+
+  /* ================================================================ */
+  /*  排版 — 字重                                                      */
+  /* ================================================================ */
+  --ml-font-weight-regular:  400;
+  --ml-font-weight-semibold: 600;
+  --ml-font-weight-bold:     700;
+  --ml-font-weight-light:   300;
+
+  /* ================================================================ */
+  /*  排版 — 字号（Mobile Standard）                                    */
+  /* ================================================================ */
+  --ml-font-display:      2.09375rem;  /* 大标题（Display）           */
+  --ml-font-heading:      1.1875rem;  /* 页面标题（Heading）         */
+  --ml-font-body:         1.125rem;  /* 正文（Body）                */
+  --ml-font-label:        0.9375rem;  /* 辅助文字（Label）           */
+  --ml-font-caption:      0.78125rem;  /* 标签/说明（Caption）        */
+  --ml-font-nav-title:    0.40625rem;  /* 导航标题（Nav Title）       */
+  --ml-font-size-large:   2rem;  /* 大字（Large Display）        */
+  --ml-font-body-small:   0.375rem;  /* 小号正文（Body Small）      */
+  --ml-font-label-small:  0.3125rem;  /* 小号辅助（Label Small）     */
+  --ml-font-caption-small: 0.28125rem;  /* 小号说明（Caption Small）   */
+
+  /* ================================================================ */
+  /*  排版 — 行高                                                      */
+  /* ================================================================ */
+  --ml-line-height-display:  2.9375rem;
+  --ml-line-height-heading:  1.84375rem;
+  --ml-line-height-body:     1.84375rem;
+  --ml-line-height-label:    1.28125rem;
+  --ml-line-height-caption:  1.09375rem;
+
+  /* ================================================================ */
+  /*  排版 — 字体                                                      */
+  /* ================================================================ */
+  --ml-font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+
+  /* ================================================================ */
+  /*  圆角（Border Radius）                                             */
+  /* ================================================================ */
+  --ml-radius-none:    0;         /* 无圆角                     */
+  --ml-radius-sm:       0.15625rem;   /* 小标签、徽标                   */
+  --ml-radius-md:       0.28125rem;   /* 卡片、容器                     */
+  --ml-radius-lg:      0.59375rem;   /* 大型组件                       */
+  --ml-radius-button:    0.375rem;  /* 标准按钮                  */
+  --ml-radius-button-md: 0.53125rem;  /* 中等按钮                  */
+  --ml-radius-button-lg: 1.4375rem;  /* 全圆角按钮（胶囊形）      */
+  --ml-radius-full: 50%;         /* 圆形（头像等）            */
+
+  /* ================================================================ */
+  /*  按钮高度                                                         */
+  /* ================================================================ */
+  --ml-button-height-sm: 1.96875rem;
+  --ml-button-height-md: 2.875rem;
+  --ml-button-height-lg: 3.90625rem;
+
+  /* ================================================================ */
+  /*  组件 Token — 按钮                                                */
+  /* ================================================================ */
+  --ml-button-primary-text:     #ffffff;
+  --ml-button-primary-bg:       #3370ff;
+  --ml-button-secondary-bg:     #f5f6fa;
+  --ml-button-disabled-bg:      #e3e5eb;
+  --ml-button-text-color:       #3370ff;
+
+  /* ================================================================ */
+  /*  组件 Token — 输入框                                              */
+  /* ================================================================ */
+  --ml-input-border:           #e3e5eb;
+  --ml-input-border-focus:     #3370ff;
+  --ml-input-text-placeholder: #b0b3be;
+  --ml-input-text:             #272848;
+  --ml-input-bg:               #ffffff;
+  --ml-input-bg-disabled:      #f5f6fa;
+
+  /* ================================================================ */
+  /*  组件 Token — 复选框 / 单选框                                     */
+  /* ================================================================ */
+  --ml-checkbox-border:    #e3e5eb;
+  --ml-checkbox-selected:  #3370ff;
+  --ml-radio-border:       #e3e5eb;
+  --ml-radio-selected:     #3370ff;
+
+  /* ================================================================ */
+  /*  组件 Token — 对话框 / 底部弹窗 / 导航栏                          */
+  /* ================================================================ */
+  --ml-dialog-bg:  #ffffff;
+  --ml-sheet-bg:   #ffffff;
+  --ml-nav-bg:     #ffffff;
+
+  /* ================================================================ */
+  /*  组件 Token — 搜索框                                              */
+  /* ================================================================ */
+  --ml-search-bg: #f5f6fa;
+
+  /* ================================================================ */
+  /*  组件 Token — 徽标 / 标签（Badge / Tag）                          */
+  /* ================================================================ */
+  --ml-badge-bg:           #ff4141;
+  --ml-tag-error-text:     #ff4141;
+  --ml-tag-error-bg:       #fae6e8;
+  --ml-tag-warning-text:   #fb9d30;
+  --ml-tag-warning-bg:     #fff5eb;
+  --ml-tag-success-text:   #00bf7f;
+  --ml-tag-success-bg:     #e6f9f2;
+  /* —— Safe Area（iframe 脚本注入，此处仅声明）—— */
+  --liuhai-top: 0;
+  --liuhai-bottom: 0;
+
+  /* ================================================================ */
+  /*  组件 Token — 进度条（ProgressBar / Progress）                    */
+  /* ================================================================ */
+  --ml-progress-track-bg:       var(--ml-color-grayblue-light);   /* 轨道背景     */
+  --ml-progress-indicator:      var(--ml-color-brand);            /* 进度条填充色 */
+  --ml-progress-height:         0.25rem;                             /* 轨道高度     */
+
+  /* ================================================================ */
+  /*  组件 Token — 滑块（Slider）                                      */
+  /* ================================================================ */
+  --ml-slider-track-bg:         var(--ml-color-grayblue-light);   /* 未填充轨道   */
+  --ml-slider-track-active:     var(--ml-color-brand);            /* 已填充轨道   */
+  --ml-slider-thumb-bg:         var(--ml-color-white);            /* 滑块背景     */
+  --ml-slider-thumb-border:     var(--ml-color-brand);            /* 滑块边框色   */
+  --ml-slider-height:           0.1875rem;                             /* 轨道粗细     */
+  --ml-slider-thumb-size:       1.375rem;                            /* 触摸区域直径 */
+
+  /* ================================================================ */
+  /*  组件 Token — 开关（Switch / Toggle）                              */
+  /* ================================================================ */
+  --ml-switch-on-bg:            var(--ml-color-brand);            /* 开启态背景   */
+  --ml-switch-off-bg:           var(--ml-color-grayblue-medium-light); /* 关闭态背景 */
+  --ml-switch-knob:             var(--ml-color-white);            /* 圆钮颜色     */
+  --ml-switch-size-w:           3rem;                            /* 总宽度       */
+  --ml-switch-size-h:           1.625rem;                            /* 总高度       */
+  --ml-switch-knob-size:        1.3125rem;                            /* 圆钮直径     */
+
+  /* ================================================================ */
+  /*  组件 Token — 卡片（Card）                                        */
+  /* ================================================================ */
+  --ml-card-bg:                 var(--ml-color-bg-surface);       /* 卡片背景     */
+  --ml-card-padding:            1rem;                            /* 内边距       */
+  --ml-card-radius:             var(--ml-radius-md);             /* 圆角         */
+  --ml-card-border-color:       var(--ml-color-border-subtle);    /* 边框色       */
+  --ml-card-shadow:             none;                             /* ML 风格用边框替阴影 */
+
+  /* ================================================================ */
+  /*  组件 Token — 下拉选择（Dropdown / Select）                         */
+  /* ================================================================ */
+  --ml-dropdown-bg:             var(--ml-color-bg-surface);       /* 面板背景     */
+  --ml-dropdown-item-hover:     var(--ml-color-brand-bg);        /* 选项悬停底   */
+  --ml-dropdown-border:         var(--ml-color-border-default);   /* 边框色       */
+  --ml-dropdown-max-height:     18.75rem;                           /* 最大可见行数 */
+
+  /* ================================================================ */
+  /*  组件 Token — 列表项（ListItem）                                   */
+  /* ================================================================ */
+  --ml-listitem-min-height:     3.125rem;                          /* 行最小高度   */
+  --ml-listitem-padding-x:      1rem;                           /* 水平内边距   */
+  --ml-listitem-padding-y:      0.75rem;                           /* 垂直内边距   */
+  --ml-listitem-divider:        var(--ml-color-line);            /* 分割线       */
+  --ml-listitem-hover:          var(--ml-color-brand-bg);        /* 行悬停底色   */
+  --ml-listitem-arrow-color:    var(--ml-color-text-placeholder); /* 箭头颜色     */
+
+  /* ================================================================ */
+  /*  间距栅格（Spacing Scale）— 基于 8px 栅格，rpx 单位               */
+  /* ================================================================ */
+  --ml-space-xs:   0.375rem;                                         /* ≈8px   紧凑间距 */
+  --ml-space-sm:   0.75rem;                                         /* ≈16px  小间距   */
+  --ml-space-md:   1.125rem;                                         /* ≈24px  中间距   */
+  --ml-space-lg:   1.5rem;                                         /* ≈32px  大间距   */
+  --ml-space-xl:   1.875rem;                                         /* ≈40px  特大间距 */
+  --ml-space-xxl:  2.25rem;                                         /* ≈48px  区块间距 */
+}
+.page[data-v-6de84266] {
+  background: var(--ml-color-bg-page);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.scroll-area[data-v-6de84266] {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.75rem 0.78125rem;
+  box-sizing: border-box;
+}
+.stepper[data-v-6de84266] {
+  display: flex;
+  background: var(--ml-color-white);
+  border-radius: var(--ml-radius-lg);
+  padding: 1.25rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.stepper__node[data-v-6de84266] {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stepper__node__circle[data-v-6de84266] {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: var(--ml-radius-full);
+  background: var(--ml-color-border-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.stepper__node__index[data-v-6de84266] {
+  font-size: var(--ml-font-label);
+  color: var(--ml-color-white);
+  font-weight: var(--ml-font-weight-semibold);
+}
+.stepper__node__title[data-v-6de84266] {
+  font-size: var(--ml-font-caption);
+  color: var(--ml-color-text-secondary);
+  margin-top: 0.375rem;
+}
+.stepper__node__line[data-v-6de84266] {
+  position: absolute;
+  top: 0.875rem;
+  left: 50%;
+  width: 100%;
+  height: 0.0625rem;
+  background: var(--ml-color-border-strong);
+  z-index: 0;
+}
+.stepper__node--0 .stepper__circle[data-v-6de84266] {
+  background: var(--ml-color-brand);
+}
+.stepper__node--0 .stepper__title[data-v-6de84266] {
+  color: var(--ml-color-text-primary);
+}
+.stepper__node--0 .stepper__line[data-v-6de84266] {
+  background: var(--ml-color-brand);
+}
+.stepper__node--1 .stepper__circle[data-v-6de84266] {
+  background: var(--ml-color-brand);
+}
+.stepper__node--1 .stepper__title[data-v-6de84266] {
+  color: var(--ml-color-brand);
+  font-weight: var(--ml-font-weight-semibold);
+}
+.step-content[data-v-6de84266] {
+  background: var(--ml-color-white);
+  border-radius: var(--ml-radius-lg);
+  padding: 1rem 0.75rem;
+}
+.step-content__title[data-v-6de84266] {
+  font-size: var(--ml-font-body);
+  font-weight: var(--ml-font-weight-semibold);
+  color: var(--ml-color-text-primary);
+  display: block;
+  margin-bottom: 0.375rem;
+}
+.step-content__desc[data-v-6de84266] {
+  font-size: var(--ml-font-label);
+  color: var(--ml-color-text-secondary);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.step-content__placeholder[data-v-6de84266] {
+  padding: 2rem 0.75rem;
+  background: var(--ml-color-bg-page);
+  border-radius: var(--ml-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-content__ph-text[data-v-6de84266] {
+  font-size: var(--ml-font-caption);
+  color: var(--ml-color-text-placeholder);
+  text-align: center;
+}
+.footer[data-v-6de84266] {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.625rem 0.78125rem calc(0.625rem + var(--liuhai-bottom));
+  background: var(--ml-color-white);
+  border-top: 0.03125rem solid var(--ml-color-border-default);
+}
+.footer__btn[data-v-6de84266] {
+  flex: 1;
+  height: 2.875rem;
+  border-radius: var(--ml-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--ml-font-body);
+  font-weight: var(--ml-font-weight-semibold);
+}
+.footer__btn--plain[data-v-6de84266] {
+  background: var(--ml-color-bg-page);
+  color: var(--ml-color-text-primary);
+}
+.footer__btn--primary[data-v-6de84266] {
+  background: var(--ml-color-brand);
+  color: var(--ml-color-white);
+}
+.footer__btn[data-v-6de84266]:active {
+  opacity: 0.85;
+}

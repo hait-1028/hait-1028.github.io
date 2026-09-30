@@ -1,0 +1,57 @@
+{
+  "mapping": {
+    "/pages/demo/workbench/index": [
+      "移动端工作台/工作台.md"
+    ],
+    "/pages/stocktake/tasks": [
+      "移动端盘点采集.md"
+    ],
+    "/pages/stocktake/execute": [
+      "移动端盘点采集.md"
+    ],
+    "/pages/stocktake/surplus": [
+      "移动端盘点采集.md"
+    ],
+    "/pages/stocktake/check": [
+      "移动端盘点采集.md"
+    ],
+    "/pages/personal/assets": [
+      "个人资产与自主点验.md"
+    ]
+  },
+  "tree": [
+    {
+      "title": "移动端工作台",
+      "children": [
+        {
+          "title": "工作台",
+          "filePath": "移动端工作台/工作台.md"
+        }
+      ]
+    },
+    {
+      "title": "资产盘点",
+      "children": [
+        {
+          "title": "移动端盘点采集",
+          "filePath": "移动端盘点采集.md"
+        }
+      ]
+    },
+    {
+      "title": "个人资产",
+      "children": [
+        {
+          "title": "个人资产与自主点验",
+          "filePath": "个人资产与自主点验.md"
+        }
+      ]
+    }
+  ],
+  "externalBase": "../../../../002_PRD/barracks-mobile",
+  "files": [
+    "个人资产与自主点验.md",
+    "移动端工作台/工作台.md",
+    "移动端盘点采集.md"
+  ]
+}
